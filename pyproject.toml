@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-ml-metrics-validator"
+version = "0.1.0"
+description = "Input validation and reference checks for binary metrics and mean absolute error"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+test = ["scikit-learn>=1.2"]
+
+[tool.setuptools]
+py-modules = ["ml_metrics"]
